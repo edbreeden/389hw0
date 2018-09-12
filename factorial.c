@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-srand(time(NULL));
+unsigned now = time(NULL);
+srand(now);
 
 int main(int argc, char *argv[])
 {
