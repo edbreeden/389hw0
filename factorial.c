@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-srand( ( unsigned ) time(NULL) );
+srand(time(NULL));
 
 int main(int argc, char *argv[])
 {
