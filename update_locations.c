@@ -5,7 +5,7 @@
 
 int *generate_random_list (unsigned sz)
 {   
-    int i;
+    int i,l;
     int list[(sz * 3)];
     for (i = 0; i < (sz * 3); i++) {
     	int r = (rand() % 1001);
@@ -13,7 +13,7 @@ int *generate_random_list (unsigned sz)
         printf("xval %d : %d  ", i, *(list + i));
     } 
     static int *vects;
-    vects = *(list + (sz * 3));
+    vects = (list + (sz * 3));
     for (l = 0; l < (sz * 3); l++) {
         int s = (rand() % 2);
         vects[i] = s;
