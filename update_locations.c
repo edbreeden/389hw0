@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
     xlist = generate_random_list(n, posext);
     printf("HEYE Look vAl 0 is: %d\n", *xlist); 
     for (j = 0; j < n; j++) {
-    	printf("xval %d : %d  ", j, *(xlist + j));
+    	printf("xval %d : %d  ", j, *(xlist[j]));
     }
     //int *xvex;
     //int *ylist;
