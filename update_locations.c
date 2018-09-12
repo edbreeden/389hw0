@@ -9,7 +9,10 @@ int *generate_random_list (unsigned sz)
     int i;
     int list[sz];
     for (i = 0; i < sz; i++) {
-    	int r = (rand());
+    	int r = (rand() % 1001);
+        if (r = 0) {
+            r += (rand() %1001);
+        }
     	list[i] = r;
     } 
     static int *xs;
