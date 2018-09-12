@@ -18,12 +18,12 @@ int *generate_random_list (unsigned sz, unsigned ext)
 
 int main(int argc, char *argv[])
 {
-    int n,j,k,posext,vecext;
+    int n,j,posext;
     n = atoi(argv[1]);
     srand(n);
     int *xlist;
     posext = 1001;
-    vecext = 3;
+    //vecext = 3;
     xlist = generate_random_list(n, posext);
     for (j = 0; j < n; j++) {
     	printf("xval %d : %d  ", j, *(xlist + j));
@@ -33,6 +33,6 @@ int main(int argc, char *argv[])
    // int *xvex = generate_random_list(n, vecext);
    // for (k = 0; k < n; k++) {
     	//printf("mval %d : %d  ", k, *(xvex + k));
-    }
+    //}
     return 0;
 }
