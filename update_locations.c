@@ -23,6 +23,14 @@ int *generate_random_list (unsigned sz)
     xs = list;
     return xs;
 }
+int array_sum(unsigned sz, int *arr) {
+    int i,sum:
+    sum = 0;
+    for (i=0; i< sz; i ++) {
+        sum = sum + arr[i];
+    } 
+    return sum;
+}
 void update_coords(unsigned sz, int *x, int *y, int *z, int *vx, int *vy, int *vz) {
     int i;
     for (i=0; i< sz; i++) {
@@ -35,15 +43,34 @@ void update_coords(unsigned sz, int *x, int *y, int *z, int *vx, int *vy, int *v
 }
 int main(int argc, char *argv[])
 {
-    int n,j,posext;
+    int n,j,m;
     n = atoi(argv[1]);
+    m = atoi(argv[2]);
     srand(n);
     int *xlist;
-    xlist = generate_random_list(n);
-    printf("HEYE Look vAl 0 is: %d\n", *xlist); 
+    int *ylist;
+    int *zlist;
+    int *vx;
+    int *vy;
+    int *vz;
+    xlist = generate_random_list(n); 
     for (j = 0; j < n; j++) {
     	printf("xval %d : %d  ", j, *(xlist + j));
     }
+    ylist = xlist + (sz // 3);
+    zlist = ylist + (sz // 3);
+    vx = xlist + sz;
+    vy = vx + (sz // 3);
+    vz = vy + (sz // 3);
+    int iter
+    int start = clock_gettime(CLOCK_PROCESS_CPUTIME_ID);
+    for (iter=0;iter < m;iter++) {
+        updatecoords(sz,xlist,ylist,zlist,vx,vy,vz);
+    }
+    int end_time = clock_gettime(CLOCK_PROCESS_CPUTIME_ID)
+    print "elapsed CPU time: %d", (end-start));
+               
+    int chksum = array_sum(sz*3, xlist;
     //int *xvex;
     //int *ylist;
    // int *xvex = generate_random_list(n, vecext);
