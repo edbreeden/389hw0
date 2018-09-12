@@ -12,7 +12,10 @@ int *generate_random_list (unsigned sz)
     	int r = (rand() % 1001);
     	list[i] = r;
 	printf("list[%d]: %d\n",i,list[i]);
-    } return list;
+    } 
+    static int *xs;
+    xs = list;
+    return xs;
 }
 int main(int argc, char *argv[])
 {
