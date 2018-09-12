@@ -8,13 +8,11 @@ float *generate_random_list (unsigned sz)
 {   
 	int i;
 	int list[sz];
-	float *p;
-    p = list;
     for (i = 0; i < sz; i++) {
     	int r = (rand() % 1001);
     	list[i] = r;
-	printf("list[i]: %d (p + i): %f *(p +i): %f \n",list[i], (p+i), *(p+i));
-    } return p;
+	printf("list[i]: %d (list+i): %f *(list+i): %f \n",list[i], (p+i), *(p+i));
+    } return list;
 }
 int main(int argc, char *argv[])
 {
