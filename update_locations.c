@@ -30,9 +30,9 @@ int main(int argc, char *argv[])
     }
     //int *xvex;
     //int *ylist;
-    int *xvex = generate_random_list(n, vecext);
-    for (k = 0; k < n; k++) {
-    	printf("mval %d : %d  ", k, *(xvex + k));
+   // int *xvex = generate_random_list(n, vecext);
+   // for (k = 0; k < n; k++) {
+    	//printf("mval %d : %d  ", k, *(xvex + k));
     }
     return 0;
 }
