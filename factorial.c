@@ -3,7 +3,7 @@ int main(int argc, char **argv)
 {
     int i;
     unsigned long long factorial = 1;
-    int n = argv[0]
+    int n = argv[0];
 
     // show error if the user enters a negative integer
     if (n < 0)
