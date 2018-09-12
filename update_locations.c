@@ -26,13 +26,13 @@ int main(int argc, char *argv[])
     vecext = 3;
     xlist = generate_random_list(n, posext);
     for (j = 0; j < n; j++) {
-    	printf("xval %d : %d  ", j, xlist[j]);
+    	printf("xval %d : %d  ", j, *(xlist + j);
     }
     //int *xvex;
     //int *ylist;
     int *xvex = generate_random_list(n, vecext);
     for (k = 0; k < n; k++) {
-    	printf("mval %d : %d  ", k, xvex[k]);
+    	printf("mval %d : %d  ", k, *(xvex + k);
     }
     return 0;
 }
