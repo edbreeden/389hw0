@@ -10,6 +10,7 @@ int *generate_random_list (unsigned sz, unsigned ext)
     for (i = 0; i < (sz * 3); i++) {
     	int r = (rand() % (ext));
     	list[i] = r;
+        printf("val %d : %d  ", i, *(list + i));
     } 
     static int *xs;
     xs = list;
