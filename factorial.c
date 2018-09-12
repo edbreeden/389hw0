@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-    
+#include <errno.h>
+#include <limits.h>
+
 int main(int argc, char *argv[])
 {
-    int i;
+    int i,n;
     unsigned long long factorial = 1;
-    int n = atoi(*argv[1]);
+    n = atoi(*argv[1]);
     printf("input: %d", n);
     // show error if the user enters a negative integer
     if (n < 0)
