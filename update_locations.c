@@ -25,12 +25,12 @@ int main(int argc, char *argv[])
     posext = 1001;
     vecext = 3;
     xlist = generate_random_list(n, posext);
-    for (j = 0; j < (n; j++) {
+    for (j = 0; j < n; j++) {
     	printf("xval %d : %d  ", j, xlist[j]);
     }
-    int *xvex;
+    //int *xvex;
     //int *ylist;
-    xvex = generate_random_list(n, vecext);
+    int *xvex = generate_random_list(n, vecext);
     for (k = 0; k < n; k++) {
     	printf("mval %d : %d  ", k, xvex[k]);
     return 0;
