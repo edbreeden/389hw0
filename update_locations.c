@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     float *xs;
     xs = generate_random_list(n);
     for (j = 0; j < n; j++) {
-    	printf("val: %d\n", *(xs + j));
+    	printf("val: %f\n", *(xs + j));
     }
     return 0;
 }
