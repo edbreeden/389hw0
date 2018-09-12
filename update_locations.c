@@ -23,7 +23,7 @@ int *generate_random_list (unsigned sz)
     xs = list;
     return xs;
 }
-void update_coords(unsigned sz, int *x, int *y. int *z, int *vx, int *vy, int *vz) {
+void update_coords(unsigned sz, int *x, int *y, int *z, int *vx, int *vy, int *vz) {
     int i;
     for (i=0; i< sz; i++) {
         x[i] = x[i] + vx[i];
