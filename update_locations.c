@@ -26,6 +26,6 @@ int main(int argc, char *argv[])
     rlist = generate_random_list(n);
     for (j = 0; j < n; j++) {
     	printf("val %d : %d\n", j, rlist[j]);
-  //  }
+    }
     return 0;
 }
