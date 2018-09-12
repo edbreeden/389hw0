@@ -1,11 +1,9 @@
 #include <stdio.h>
-int main()
+int main(int argc, char **argv)
 {
-    int n, i;
+    int i;
     unsigned long long factorial = 1;
-
-    printf("Enter an integer: ");
-    scanf("%d",&n);
+    int n = argv[0]
 
     // show error if the user enters a negative integer
     if (n < 0)
