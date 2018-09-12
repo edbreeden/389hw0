@@ -1,8 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+
+srand(time(NULL));
 
 int main(int argc, char *argv[])
 {
+    int r = rand();
+    r = r / abs(r);
+    printf("rand: %d/n", r);
     int i,n;
     unsigned long long factorial = 1;
     n = atoi(argv[1]);
