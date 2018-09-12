@@ -4,7 +4,7 @@
 
 
 
-int * generate_random_list (unsigned sz)
+float *generate_random_list (unsigned sz)
 {   
 	int i;
 	float list[sz];
@@ -13,16 +13,17 @@ int * generate_random_list (unsigned sz)
     for (i = 0; i < sz; i++) {
     	int r = (rand() % 1001);
     	list[i] = r;
-    }
+    } return p;
 }
 int main(int argc, char *argv[])
 {
-	srand(time(NULL));
+    srand(time(NULL));
     int n,j;
     n = atoi(argv[1]);
-    int *xs = generate_random_list(n);
+    float *xs;
+    xs = generate_random_list(n);
     for (j = 0; j < n; j++) {
     	printf("val: %d\n", xs[j] );
     }
-
+    return 0;
 }
