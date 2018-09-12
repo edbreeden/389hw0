@@ -24,7 +24,7 @@ int *generate_random_list (unsigned sz)
     return xs;
 }
 int array_sum(unsigned sz, int *arr) {
-    int i,sum:
+    int i, sum;
     sum = 0;
     for (i=0; i< sz; i ++) {
         sum = sum + arr[i];
@@ -57,8 +57,8 @@ int main(int argc, char *argv[])
     for (j = 0; j < n; j++) {
     	printf("xval %d : %d  ", j, *(xlist + j));
     }
-    ylist = xlist + (n // 3);
-    zlist = ylist + (n // 3);
+    ylist = (xlist + (n // 3));
+    zlist = (ylist + (n // 3));
     vx = xlist + n;
     vy = vx + (n // 3);
     vz = vy + (n // 3);
