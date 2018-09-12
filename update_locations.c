@@ -7,7 +7,7 @@
 int *generate_random_list (unsigned sz)
 {   
     int i;
-    static int list[sz];
+    int list[sz];
     for (i = 0; i < sz; i++) {
     	int r = (rand() % 1001);
     	list[i] = r;
