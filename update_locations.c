@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
     srand(time(NULL));
     int n;
     n = atoi(argv[1]);
-    int *rlist;
+    int *rlist[n];
     rlist = generate_random_list(n);
     //for (j = 0; j < n; j++) {
     	//printf("val %d : %d\n", j, *(xs + j));
