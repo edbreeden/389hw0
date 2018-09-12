@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 {
     srand(time(0));
     int r = rand();
-    r = r / abs(r);
+    //r = r / abs(r);
     printf("rand: %d/n", r);
     int i,n;
     unsigned long long factorial = 1;
