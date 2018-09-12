@@ -1,12 +1,12 @@
 #include <stdio.h>
-BUFSIZE=1000;
+
     
 int main(int argc, char *argv[])
 {
     int i;
     unsigned long long factorial = 1;
     int n = *argv[1];
-
+    printf("input: %d", n);
     // show error if the user enters a negative integer
     if (n < 0)
         printf("Error! Factorial of a negative number doesn't exist.");
