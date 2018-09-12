@@ -1,5 +1,5 @@
 #include <stdio.h>
-BUFSIZE 1000
+BUFSIZE=1000;
     
 int main(int argc, char **argv)
 {
