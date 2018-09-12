@@ -57,18 +57,18 @@ int main(int argc, char *argv[])
     for (j = 0; j < n; j++) {
     	printf("xval %d : %d  ", j, *(xlist + j));
     }
-    ylist = xlist + (sz // 3);
-    zlist = ylist + (sz // 3);
-    vx = xlist + sz;
-    vy = vx + (sz // 3);
-    vz = vy + (sz // 3);
+    ylist = xlist + (n // 3);
+    zlist = ylist + (n // 3);
+    vx = xlist + n;
+    vy = vx + (n // 3);
+    vz = vy + (n // 3);
     int iter
     int start = clock_gettime(CLOCK_PROCESS_CPUTIME_ID);
     for (iter=0;iter < m;iter++) {
-        updatecoords(sz,xlist,ylist,zlist,vx,vy,vz);
+        updatecoords(n,xlist,ylist,zlist,vx,vy,vz);
     }
     int end_time = clock_gettime(CLOCK_PROCESS_CPUTIME_ID)
-    print "elapsed CPU time: %d", (end-start));
+    print "avg time per coord: %d", (end-start)/(m*n));
                
     int chksum = array_sum(sz*3, xlist;
     //int *xvex;
@@ -78,4 +78,5 @@ int main(int argc, char *argv[])
     	//printf("mval %d : %d  ", k, *(xvex + k));
     //}
     return 0;
+    }
 }
