@@ -4,14 +4,14 @@
 
 
 
-float *generate_random_list (unsigned sz)
+int *generate_random_list (unsigned sz)
 {   
 	int i;
 	int list[sz];
     for (i = 0; i < sz; i++) {
     	int r = (rand() % 1001);
     	list[i] = r;
-	printf("list[i]: %d (list+i): %f *(list+i): %f \n",list[i], (p+i), *(p+i));
+	printf("list[i]: %d (list+i): %f *(list+i): %f \n",list[i], (list+i), *(list+i));
     } return list;
 }
 int main(int argc, char *argv[])
