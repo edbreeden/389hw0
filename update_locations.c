@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
     vecext = 3;
     xlist = generate_random_list(n, posext);
     for (j = 0; j < n; j++) {
-    	printf("xval %d : %d  ", j, *(xlist + j);
+    	printf("xval %d : %d  ", j, *(xlist + j));
     }
     //int *xvex;
     //int *ylist;
