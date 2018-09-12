@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-srand(time(0));
 
 int main(int argc, char *argv[])
 {
+    srand(time(0));
     int r = rand();
     r = r / abs(r);
     printf("rand: %d/n", r);
