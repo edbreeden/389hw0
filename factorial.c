@@ -1,7 +1,7 @@
 #include <stdio.h>
 BUFSIZE 1000
     
-int main(int argc, char ** argv[])
+int main(int argc, char **argv)
 {
     int i;
     unsigned long long factorial = 1;
