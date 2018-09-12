@@ -20,10 +20,9 @@ int main(int argc, char *argv[])
 	srand(time(NULL));
     int n,j;
     n = atoi(argv[1]);
-    xs = generate_random_list(n);
+    int *xs = generate_random_list(n);
     for (j = 0; j < n; j++) {
     	printf("val: %d\n", xs[j] );
     }
-    printf("%s\n", );
 
 }
