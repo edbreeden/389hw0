@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <time.h>
 #include <stdlib.h>
 
 
@@ -19,9 +18,9 @@ int *generate_random_list (unsigned sz)
 }
 int main(int argc, char *argv[])
 {
-    srand(time(NULL));
     int n,j;
     n = atoi(argv[1]);
+    srand(n);
     int *rlist;
     rlist = generate_random_list(n);
     for (j = 0; j < n; j++) {
