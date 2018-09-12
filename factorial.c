@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 {
     int i,n;
     unsigned long long factorial = 1;
-    n = atoi(*argv[1]);
+    n = atoi(argv[1]);
     printf("input: %d", n);
     // show error if the user enters a negative integer
     if (n < 0)
