@@ -11,6 +11,7 @@ int *generate_random_list (unsigned sz)
     for (i = 0; i < sz; i++) {
     	int r = (rand() % 1001);
     	list[i] = r;
+        printf("val %d : %d\n", i, *(list + i));
     } 
     static int *xs;
     xs = list;
@@ -23,8 +24,8 @@ int main(int argc, char *argv[])
     n = atoi(argv[1]);
     int *xs;
     xs = generate_random_list(n);
-    for (j = 0; j < n; j++) {
-    	printf("val %d : %d\n", j, *(xs + j));
-    }
+    //for (j = 0; j < n; j++) {
+    	//printf("val %d : %d\n", j, *(xs + j));
+  //  }
     return 0;
 }
